@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : dwr.xml
+    Created on : 19 de Novembro de 2008, 23:07
+    Author     : Felipe
+    Description:
+        Purpose of the document follows.
+-->
+
+<dwr>
+    <allow>
+        <create creator ="new" javascript="CompromissoAjax">
+            <param name="class" value = "br.com.agenda.persistencia.dao.CompromissoDAO"/>
+        </create>
+        <convert converter="bean" match="br.com.agenda.action.vo.VOSubTipoCompromisso" />
+        <convert converter="bean" match="br.com.agenda.action.vo.VOTipoCompromisso" />
+    </allow>
+
+
+
+</dwr>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <init-param>
+            <param-name>detail</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <init-param>
+            <param-name>chainConfig</param-name>
+            <param-value>/WEB-INF/chain-config.xml</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+         <!-- tag libs -->  
+    <jsp-config>
+        <taglib>
+            <taglib-uri>struts-bean.tld</taglib-uri>
+            <taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>struts-html.tld</taglib-uri>
+            <taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>struts-logic.tld</taglib-uri>
+            <taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>struts-nested.tld</taglib-uri>
+            <taglib-location>/WEB-INF/struts-nested.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>struts-tiles.tld</taglib-uri>
+            <taglib-location>/WEB-INF/struts-tiles.tld</taglib-location>
+        </taglib>
+        
+           
+           
+    </jsp-config>
+      
+    <filter>
+        <filter-name>FiltroSessaoInicial</filter-name>
+        <filter-class>br.com.agenda.seguranca.filtros.FiltroInicial</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltroSessaoInicial</filter-name>
+        <url-pattern>/Consulta.do</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FiltroSessaoDelEdit</filter-name>
+        <filter-class>br.com.agenda.seguranca.filtros.FiltroDelEdit</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltroSessaoDelEdit</filter-name>
+        <url-pattern>/Edicao.do</url-pattern>
+        <url-pattern>/CadastroConfig.do</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FiltroSessaoCadastro</filter-name>
+        <filter-class>br.com.agenda.seguranca.filtros.FiltroCadastro</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FiltroSessaoCadastro</filter-name>
+        <url-pattern>/CadastroForm.do</url-pattern>
+        <url-pattern>/CadastroCategoria.do</url-pattern>
+        <url-pattern>/Compromisso.do</url-pattern>
+        <url-pattern>/CompromissoRelatorio.do</url-pattern>
+    </filter-mapping>
+
+ <!-- Servlet DWR-->
+    <servlet>
+        <servlet-name>dwr-invoker</servlet-name>
+        <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+         <param-name>crossDomainSessionSecurity</param-name>
+         <param-value>false</param-value>
+    </init-param>
+    </servlet>
+<!-- Mapeamento DWR-->
+    <servlet-mapping>
+        <servlet-name>dwr-invoker</servlet-name>
+        <url-pattern>/dwr/*</url-pattern>
+    </servlet-mapping>
+</web-app>

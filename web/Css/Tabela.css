@@ -1,0 +1,87 @@
+
+
+
+#tabela_cor tr:hover {
+  background-color: #b8d2ba;
+  
+}
+#trSeparador  {
+  background:#EBEBEB
+}
+
+
+
+#tabela_cadastro{
+font:12px arial, verdana, helvetica, sans-serif;
+border-top:1px solid #cfcfcf;
+border-left:1px solid #cfcfcf;	
+border-right:1px solid #cfcfcf;
+border-bottom:1px solid #cfcfcf;
+border-collapse:collapse;
+}
+#tabela_cadastro input {	
+background:#FFFFFF;	
+color:#000000;
+font:10px arial, verdana, helvetica, sans-serif;
+}
+#tabela_cadastro select {
+background:#FFFFFF;	
+color:#000000;
+font:11px arial, verdana, helvetica, sans-serif;
+}
+#tabela_cadastro file {
+background:#FFFFFF;
+color:#000000;
+font:11px arial, verdana, helvetica, sans-serif;
+}
+
+#tabela_cadastro th {
+background:#b8d2ba;
+padding:3px;
+font:  13px arial, verdana, helvetica, sans-serif;
+}
+/****************Tabela Seletiva****************/
+#tabela_seletiva{
+font:12px arial, verdana, helvetica, sans-serif;
+border-top:1px solid #cfcfcf;
+border-left:1px solid #cfcfcf;	
+border-right:1px solid #cfcfcf;
+border-bottom:1px solid #cfcfcf;
+border-collapse:collapse;
+}
+#tabela_seletiva tr{
+background-color:#f2f1f1;
+}
+#tabela_seletiva tr.dif{
+background-color:#FFFFFF;
+}
+#tabela_seletiva tr.dif2{
+background-color:#CADAAB;
+}
+/****************Em uso****************/
+#tabela_conteudo{
+position:relative;
+
+}
+
+#tabela_conteudo td{
+font-family: Verdana,Arial,Helvetica;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+}
+#fieldset_seletivo{
+  border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
+  border-left-color: #cccccc;
+  border-right-color: #cccccc;
+  border-width:thin;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/****************Tabela Lista****************/
+
+
+

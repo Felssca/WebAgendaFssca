@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="br.com.agenda.action.vo.VOCompromisso" table="compromisso">
+    <id name="id" type="integer">
+      <generator class="increment"/>
+    </id>
+    <property column="id_tipo_compromisso" name="idTipoCompromisso" type="integer"/>
+    <property column="dt_data" name="dtData" type="java.util.Date"/>
+    <property column="forma_pagamento" name="formaPagamento" type="integer"/>
+    <property name="titulo" type="string"/>
+    <property name="descricao" type="string"/>
+    <property name="efetuado" type="boolean"/>
+    <property column="id_usuario" name="idUsuario" type="integer"/>
+    <property name="valor" type="double"/>
+    <property name="prestacoes" type="integer"/>
+    <property column="prestacoes_pagas" name="prestacoesPagas" type="integer"/>
+    <property column="id_sub_tipo_compromisso" name="idSubTipoCompromisso" type="integer"/>
+    <property column="comprovantes" name="comprovanteBlob" type="blob"/>
+    <property column="local_comprovante" name="localComprovantes" type="string"/>
+    <property column="extencao_comprovante" name="extencaoComprovante" type="string"/>
+  </class>
+</hibernate-mapping>

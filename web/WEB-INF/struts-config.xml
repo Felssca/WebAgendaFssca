@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="FormCadastro" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="nome" type="java.lang.String"/>
+            <form-property name="telefone" type="java.lang.String"/>
+            <form-property name="telefone2" type="java.lang.String"/>
+            <form-property name="telefone3" type="java.lang.String"/>
+            <form-property name="celular" type="java.lang.String"/>
+            <form-property name="celular2" type="java.lang.String"/>
+            <form-property name="celular3" type="java.lang.String"/>
+            <form-property name="email" type="java.lang.String"/>
+            <form-property name="email2" type="java.lang.String"/>
+            <form-property name="email3" type="java.lang.String"/>
+            <form-property name="aniversario" type="java.lang.String"/>
+            <form-property name="endereco" type="java.lang.String"/>
+            <form-property name="endereco2" type="java.lang.String"/>
+            <form-property name="endereco3" type="java.lang.String"/>
+            <form-property name="carac" type="java.lang.String"/>
+            <form-property name="tipo" type="java.lang.String"/>
+            <form-property name="regiao" type="java.lang.String"/>
+            <form-property name="foto" type="java.lang.String"/>
+            <form-property name="fotoFile" type="org.apache.struts.upload.FormFile"/>
+            <form-property name="msn" type="java.lang.String"/>
+            <form-property name="skype" type="java.lang.String"/>
+            <form-property name="orkut" type="java.lang.String"/>
+            <form-property name="site" type="java.lang.String"/>
+            <form-property name="listaCategoria" type="java.util.Collection"/>
+            
+            
+            
+      
+        </form-bean>
+        <form-bean name="FormConsulta" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="nomeBusca" type="java.lang.String"/>
+            <form-property name="comboCriteria" type="java.lang.String"/>
+        </form-bean>
+        <form-bean name="FormConfig" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="tipo" type="java.lang.String"/>
+            <form-property name="id" type="java.lang.String"/>
+
+        </form-bean>
+        <form-bean name="FormLogin" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="usuario" type="java.lang.String"/>
+            <form-property name="senha" type="java.lang.String"/>
+            <form-property name="permicao" type="java.lang.String"/>
+        </form-bean>
+        
+
+
+        <!-- Compromissos-->
+        <form-bean name="FormCompromisso" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="formaPagamento" type="java.lang.String"/>
+            <form-property name="idTipoCompromisso" type="java.lang.String"/>
+            <form-property name="idSubTipoCompromisso" type="java.lang.String"/>
+            <form-property name="descSubTipoCompromisso" type="java.lang.String"/>
+            <form-property name="titulo" type="java.lang.String"/>
+            <form-property name="dtData" type="java.lang.String"/>
+            <form-property name="descricao" type="java.lang.String"/>
+            <form-property name="idUsuario" type="java.lang.String"/>
+            <form-property name="prestacoes" type="java.lang.String"/>
+            <form-property name="prestacoesPagas" type="java.lang.String"/>
+            <form-property name="valor" type="java.lang.String"/>
+            <form-property name="efetuado" type="java.lang.String"/>
+            <form-property name="mes" type="java.lang.String"/>
+            <form-property name="ano" type="java.lang.String"/>
+            <form-property name="editar" type="java.lang.String"/>
+            <form-property name="comprovantes" type="org.apache.struts.upload.FormFile"/>
+            <form-property name="localComprovante" type="org.apache.struts.upload.FormFile"/>
+            <form-property name="comprovanteBlob" type="java.lang.String"/>
+            <form-property name="comprovanteLocal" type="java.lang.String"/>
+            <form-property name="extencaoComprovante" type="java.lang.String"/>
+        </form-bean>
+
+        <form-bean name="FormTipoCompromisso" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="desc_tipo_compromisso" type="java.lang.String"/>
+            
+        </form-bean>
+        <form-bean name="FormSubTipoCompromisso" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="descSubTipoCompromisso" type="java.lang.String"/>
+        </form-bean>
+
+        <form-bean name="FormPesquisaCompromisso" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="mes" type="java.lang.String"/>
+            <form-property name="ano" type="java.lang.String"/>
+        </form-bean>
+
+        <!-- Relatorios-->
+
+        <form-bean name="FormRelatorio" type="org.apache.struts.validator.DynaValidatorForm">
+            <form-property name="id" type="java.lang.String"/>
+            <form-property name="formaPagamento" type="java.lang.String"/>
+            <form-property name="idTipoCompromisso" type="java.lang.String"/>
+            <form-property name="idSubTipoCompromisso" type="java.lang.String"/>
+            <form-property name="descSubTipoCompromisso" type="java.lang.String"/>
+            <form-property name="titulo" type="java.lang.String"/>
+            <form-property name="dtData" type="java.lang.String"/>
+            <form-property name="descricao" type="java.lang.String"/>
+            <form-property name="idUsuario" type="java.lang.String"/>
+            <form-property name="prestacoes" type="java.lang.String"/>
+            <form-property name="valor" type="java.lang.String"/>
+            <form-property name="efetuado" type="java.lang.String"/>
+            <form-property name="mes" type="java.lang.String"/>
+            <form-property name="ano" type="java.lang.String"/>
+            <form-property name="editar" type="java.lang.String"/>
+            <form-property name="comprovantes" type="org.apache.struts.upload.FormFile"/>
+            <form-property name="comprovanteBlob" type="java.lang.String"/>
+            <form-property name="extencaoComprovante" type="java.lang.String"/>
+        </form-bean>
+        
+    </form-beans>
+    
+    <global-exceptions>
+        <exception key="erro.null"
+type="java.lang.NullPointerException"
+path="erro.jsp"/>
+        <exception key="erro.sql"
+type="java.lang.Exception"
+path="erro.jsp"/>
+    </global-exceptions>
+    
+    <global-forwards>
+        
+    </global-forwards>
+    
+    <action-mappings>
+        <action path="/CadastroConfig" type="br.com.agenda.action.AgendaConfigAction"
+                parameter="comando" name="FormConfig" input="/configuracao.jsp"
+                validate="true" scope="request" >
+            <forward name="cadInicial" path="agendaConfig.pagina" />
+            <forward name="cadastro" path="agendaConfig.pagina" />
+            <forward name="deletado" path="efetuado.pagina" />
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+        <action path="/CadastroCategoria" type="br.com.agenda.action.AgendaCategoriaAction"
+                parameter="comando" name="FormConfig" input="/categoria.jsp"
+                validate="true" scope="request" >
+            <forward name="categoria" path="/categoria.jsp"/>
+            <forward name="cadastro" path="/categoria.jsp" />
+        </action>
+        
+        
+        <action path="/Consulta" type="br.com.agenda.action.AgendaConsultaAction"
+                parameter="comando" name="FormCadastro" input="/consulta.jsp" 
+                validate="false" scope="request">
+            <forward name="consulta" path="consulta.pagina" />
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+        <action path="/ConsultaSeletiva" type="br.com.agenda.action.AgendaConsultaAction"
+                name="FormConsulta" input="/consulta.jsp" validate="false" scope="request"
+                parameter="comando">
+            <forward name="consultaSeletiva" path="consultaSel.pagina"/>
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+        
+        <action path="/Edicao" type="br.com.agenda.action.AgendaEditDelAction"
+                name="FormCadastro" input="/edicao.jsp" validate="false"
+                parameter="comando"
+                scope="request">
+            <forward name="editar" path="edicao.pagina"/>
+            <forward name="editado" path="efetuado.pagina"/>
+            <forward name="deletado" path="efetuado.pagina"/>
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+        
+        
+        <action path="/CadastroForm" type="br.com.agenda.action.AgendaCadastroAction"
+                name="FormCadastro" input="/cadastro.jsp" validate="false"
+                parameter="comando" 
+                scope="request">
+            <forward name="cadInicial" path="cadastro.pagina"/>
+            <forward name="cadastro" path="efetuado.pagina"/>
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+        <action path="/CadastroFormValida" type="br.com.agenda.action.AgendaCadastroAction"
+                name="FormCadastro" input="/cadastro.jsp" validate="false"
+                parameter="comando" 
+                scope="request">
+            <forward name="cadInicial" path="cadastro.pagina"/>
+            <forward name="cadastro" path="efetuado.pagina"/>
+            <forward name="erro" path="erro.pagina"/>
+        </action>
+        
+           
+        
+        
+        <action path="/Login" type="br.com.agenda.seguranca.AgendaLogin"
+                name="FormLogin" input="/login.jsp" validate="true"
+                parameter="comando" 
+                scope="request">
+            <forward name="inicial" path="login.pagina"/>
+            <forward name="cadastro" path="efetuado.pagina"/>
+            <forward name="sucesso" path="/index.jsp"/>
+            <forward name="erro" path="login.pagina"/>
+        </action>
+        
+        <!-- Compromissos-->
+        <action path="/Compromisso" type="br.com.agenda.action.AgendaCompromissoAction"
+                name="FormCompromisso" input="/compromisso.jsp" validate="false"
+                parameter="comando" 
+                scope="request">
+            <forward name="inicial" path="compromisso.pagina"/>
+            <forward name="cadastroCompromisso" path="/Compromisso.do?comando=listarCompromissos"/>
+            <forward name="lista" path="compromissoLista.pagina"/>
+            <forward name="deletado" path="/Compromisso.do?comando=listarCompromissos" />
+            <forward name="editar" path="edicaoCompromisso.pagina" />
+            <forward name="ordenar" path="compromissoLista.pagina" />
+            <forward name="listaSeletivaUnitaria" path="visualisaCompromisso.pagina" />
+
+        </action>
+
+        <action path="/CompromissoConsulta" type="br.com.agenda.action.AgendaCompromissoAction"
+                name="FormPesquisaCompromisso" input="/compromissoLista.jsp" validate="false"
+                parameter="comando"
+                scope="request">
+          
+            <forward name="lista" path="compromissoLista.pagina" />
+            <forward name="listaSeletivaUnitaria" path="visualisaCompromisso.pagina" />
+            
+           
+        </action>
+         <!-- Relatorio-->
+        <action path="/CompromissoRelatorio" type="br.com.agenda.action.AgendaRelatorio"
+                name="FormRelatorio" input="/relatorio.jsp" validate="false"
+                parameter="comando"
+                scope="request">
+            <forward name="inicial" path="relatorio.pagina" />
+            <forward name="relatorio" path="relatorioExibicao.pagina" />
+           
+
+
+        </action>
+        <!-- Compromissos tipo subtipo-->
+        <action path="/TipoCompromisso" type="br.com.agenda.action.AgendaTipoCompromissoAction"
+                name="FormTipoCompromisso" input="/tipoCompromisso.jsp" validate="false"
+                parameter="comando" 
+                scope="request">
+            <forward name="inicial" path="compromisso.pagina"/>
+            <forward name="cadastroTipoCompromisso" path="efetuado.pagina"/>
+            <forward name="sucesso" path="/compromisso.jsp"/>
+            <forward name="erro" path="login.pagina"/>
+        </action>
+        <action path="/SubTipoCompromisso" type="br.com.agenda.action.AgendaSubTipoCompromissoAction"
+                name="FormSubTipoCompromisso" input="/subTipoCompromisso.jsp" validate="false"
+                parameter="comando" 
+                scope="request">
+            <forward name="inicial" path="compromisso.pagina"/>
+            <forward name="cadastroTipoCompromisso" path="efetuado.pagina"/>
+            <forward name="sucesso" path="/compromisso.jsp"/>
+            <forward name="erro" path="login.pagina"/>
+        </action>
+        
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+    
+    <message-resources parameter="agendaweb"/>
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+        <set-property property="stopOnFirstError" value="true"/>
+    </plug-in>
+    
+</struts-config>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="br.com.agenda.action.vo.VOSubTipoCompromisso" table="sub_tipo_compromisso">
+    <id name="id">
+      <generator class="increment"/>
+    </id>
+    <property column="desc_sub_tipo_compromisso" name="descSubTipoCompromisso" type="string"/>
+    <property column="id_tipo_compromisso" name="idTipoCompromisso" type="integer"/>
+    <property column="id_usuario" name="idUsuario" type="integer"/>
+  </class>
+</hibernate-mapping>

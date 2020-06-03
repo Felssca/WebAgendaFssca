@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="br.com.agenda.action.vo.VOAgenda" table="principal">
+    <id name="id">
+      <generator class="increment"/>
+    </id>
+    <property name="nome" type="string"/>
+    <property name="telefone" type="string"/>
+    <property name="telefone2" type="string"/>
+    <property name="telefone3" type="string"/>
+    <property name="celular" type="string"/>
+    <property name="celular2" type="string"/>
+    <property name="celular3" type="string"/>
+    <property name="email" type="string"/>
+    <property name="email2" type="string"/>
+    <property name="email3" type="string"/>
+    <property name="aniversario" type="java.util.Date"/>
+    <property name="endereco" type="string"/>
+    <property name="endereco2" type="string"/>
+    <property name="endereco3" type="string"/>
+    <property name="carac" type="string"/>
+    <property name="tipo" type="string"/>
+    <property name="regiao" type="string"/>
+    <property name="foto" type="string"/>
+    <property name="msn" type="string"/>
+    <property name="skype" type="string"/>
+    <property name="orkut" type="string"/>
+    <property name="site" type="string"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+    <definition name="main.layout" path="/Layout/main.jsp">
+    <put name="cabecalho" value="/Layout/topo.jsp"/>
+    <put name="corpo"   value=""/>
+    <put name="rodape" value="/Layout/rodape.jsp" />
+    </definition>
+    
+    <definition name="consulta.pagina" extends="main.layout">
+    <put name="corpo"   value="/consulta.jsp"/>
+    </definition>
+    
+     <definition name="consultaSel.pagina" extends="main.layout">
+    <put name="corpo"   value="/consultaSeletiva.jsp"/>
+    </definition>
+    
+    <definition name="cadastro.pagina" extends="main.layout">
+    <put name="corpo"   value="/cadastro.jsp"/>
+    </definition>
+    
+    <definition name="edicao.pagina" extends="main.layout">
+    <put name="corpo"   value="/edicao.jsp"/>
+    </definition>
+    
+    <definition name="agendaConfig.pagina" extends="main.layout">
+    <put name="corpo"   value="/configuracao.jsp"/>
+    </definition>
+    
+    <definition name="erro.pagina" extends="main.layout">
+        <put name="corpo" value="/erro.jsp"/>
+    </definition>
+    
+    <definition name="efetuado.pagina" extends="main.layout">
+        <put name="corpo" value="/efetuado.jsp"/>
+    </definition>
+    
+    <definition name="login.pagina" extends="main.layout">
+        <put name="corpo" value="/login.jsp"/>
+    </definition>
+    
+    <definition name="compromisso.pagina" extends="main.layout">
+        <put name="corpo" value="/compromisso.jsp"/>
+    </definition>
+    <definition name="compromissoLista.pagina" extends="main.layout">
+        <put name="corpo" value="/compromissoLista.jsp"/>
+    </definition>
+
+    <definition name="edicaoCompromisso.pagina" extends="main.layout">
+        <put name="corpo" value="../Compromissos/edicao_compromisso.jsp"/>
+    </definition>
+    <definition name="visualisaCompromisso.pagina" extends="main.layout">
+        <put name="corpo" value="../Compromissos/visualisa_compromisso.jsp"/>
+    </definition>
+
+     <definition name="anotacao.pagina" extends="main.layout">
+        <put name="corpo" value="../anotacao.jsp"/>
+    </definition>
+
+    <definition name="relatorio.pagina" extends="main.layout">
+        <put name="corpo" value="../Relatorio/relatorio.jsp"/>
+    </definition>
+    <definition name="relatorioExibicao.pagina" extends="main.layout">
+        <put name="corpo" value="../Relatorio/relatorio_exibicao.jsp"/>
+    </definition>
+
+    <!-- sample tiles definitions
+    <definition name=".mainLayout" path="/common/layouts/classicLayout.jsp">
+        <put name="title"  value="Sample Page Title" />
+        <put name="header" value="/common/header.jsp" />
+        <put name="menu"   value=".mainMenu" />
+        <put name="footer" value="/common/footer.jsp" />
+        <put name="body"   value=".portal.body" />
+    </definition>
+
+    <definition name=".mainMenu" path="/common/layouts/vboxLayout.jsp" >
+        <putList name="list" >
+            <add value=".menu.links" />
+            <add value=".menu.taglib.references" />
+            <add value=".menu.printer.friendly" />
+            <add value=".menu.old.documents" />
+      </putList>
+    </definition>
+
+    <definition name="aPage" extends=".mainLayout">
+        <put name="title"  value="Another Title" />
+        <put name="body"   value=".aPage.body" />
+    </definition>
+
+    end samples -->
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+</tiles-definitions>

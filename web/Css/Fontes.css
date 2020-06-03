@@ -1,0 +1,67 @@
+
+.fonte_texto {
+	font-family: Verdana,Arial,Helvetica;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+        background-color: #A2C0DF;
+}
+.fonte_texto_total {
+	font-family: Verdana,Arial,Helvetica;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+        background-color: #FFFFCC;
+}
+.fonte_corpo {
+	font-family: 'Courier New',Courier,monospace;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+        
+}
+.fonte_buscaSel {
+	font-family: Verdana,Arial,Helvetica;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+        background-color:#b8d2ba;
+        }
+        .fonte_pequena{
+font-family: Verdana,Arial,Helvetica;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;        
+    
+}
+.fonte_titulo_niver {
+	font-family: Verdana,Arial,Helvetica;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+        background-color:#b8d2ba;
+        
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
+  border-left-color: #cccccc;
+  border-right-color: #cccccc;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+        
+        
+a { 
+    background: inherit; color:#000000; text-decoration: none;
+    
+ }
+a:hover {
+     background: inherit; color: #FFFFFF; text-decoration: underline;
+background:#006600}
+
+
